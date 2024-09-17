@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    "#-#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "dustyextramod:purity_dust"
+    },
+    "-": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "dustyextramod:pure_diamond"
+  }
+}

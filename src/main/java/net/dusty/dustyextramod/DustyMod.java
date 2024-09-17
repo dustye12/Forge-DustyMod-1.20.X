@@ -1,6 +1,9 @@
 package net.dusty.dustyextramod;
 
 import com.mojang.logging.LogUtils;
+import net.dusty.dustyextramod.block.ModBlocks;
+import net.dusty.dustyextramod.item.ModCreativeModeTabs;
+import net.dusty.dustyextramod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -40,6 +43,11 @@ public class DustyMod {
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -50,9 +58,7 @@ public class DustyMod {
     {
     }
 
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

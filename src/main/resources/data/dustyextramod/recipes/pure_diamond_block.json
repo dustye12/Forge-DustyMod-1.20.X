@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dustyextramod:pure_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "dustyextramod:pure_diamond",
+    "count": 9
+  }
+}

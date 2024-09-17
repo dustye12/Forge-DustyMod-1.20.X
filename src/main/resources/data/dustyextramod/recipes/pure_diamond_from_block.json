@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dustyextramod:pure_diamond"
+    }
+  },
+  "result": {
+    "item": "dustyextramod:pure_diamond_block"
+  }
+}
